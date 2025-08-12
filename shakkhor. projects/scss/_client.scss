@@ -1,0 +1,281 @@
+/*** 
+
+====================================================================
+  client-section
+====================================================================
+
+***/
+
+
+.client-section {
+  position: relative;
+  padding: 120px 0 200px;
+  @include media-breakpoint-down(sm){    
+    padding: 80px 0 190px;
+  }
+}
+
+// client-block
+.client-block{
+  .inner-box{
+    position: relative;
+    background-color: var(--theme-color-light);
+    text-align: center;
+    padding: 45px 15px 43px;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+    &:hover{
+      &::before{
+        opacity: 1;
+        visibility: visible;
+        left: 50%;
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-50%);
+      width: 95px;
+      height: 13px;
+      background-color: var(--theme-color1);
+      transition: all 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .title{
+      margin-bottom: 0;
+    }
+    .text{
+      @include media-breakpoint-down(sm){    
+        font-size: 14px;
+      }
+    }
+    span{
+      text-transform: uppercase;
+      color: var(--theme-color1);
+      font-family: var(--text-font2);
+    }
+    .image-box{
+      position: relative;
+      margin-bottom: 40px;
+      margin-top: 21px;
+      .icon{
+        position: absolute;
+        bottom: -13px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 40px;
+        color: var(--theme-color1);
+      }
+    }
+  }
+}
+
+
+/*** 
+
+====================================================================
+  offer-section
+====================================================================
+
+***/
+
+
+.offer-banner{
+  position: relative;
+  margin-top: -120px;
+  .outer-box{
+    position: relative;
+    background-color: #f8f5f0;
+    padding: 74px 103px 78px;
+    overflow: hidden;
+    @include media-breakpoint-down(lg){    
+      padding: 44px 46px 50px;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 658px;
+      height: 502px;
+      background-image: url(../images/resource/pattern3.png);
+    }
+    .content-colum{
+      .inner-column{
+        .content-box{
+          .sub-title{
+            @include media-breakpoint-down(sm){    
+              margin-bottom: 20px;
+              display: inline-block;
+            }
+          }
+          .title{
+            font-size: 48px;
+            margin-bottom: 0;
+            @include media-breakpoint-down(xl){
+              font-size: 39px;
+            }
+            @include media-breakpoint-down(sm){    
+              font-size: 30px;
+              line-height: 40px;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+    .btn-column{
+      .inner-column{
+        text-align: right;
+        margin-top: 21px;
+        @include media-breakpoint-down(lg){
+          text-align: center;
+        }
+        .read-more{
+          padding: 0 47px;
+          height: 60px;
+          line-height: 60px;
+          background-color: var(--theme-color1);
+          color: var(--theme-color-light);
+          display: inline-block;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: var(--text-font2);
+          position: relative;
+          z-index: 9;
+          &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            content: "";
+            z-index: -1;
+            background-color: var(--bg-theme-color1);
+            border-radius: inherit;
+            transform: scale(0, 1);
+            transform-origin: top right;
+            transition: -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+            transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+            transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000), -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+            transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+          }
+          &:hover:before {
+            transform: scale(1, 1);
+            transform-origin: bottom left;
+          }
+          &:hover {
+            background: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*** 
+
+====================================================================
+  client-section two
+====================================================================
+
+***/
+
+.client-section-two{
+  position: relative;
+  padding: 80px 0;
+  .client-slider{
+    margin-left: 0;
+    @include media-breakpoint-down(xl) {
+      margin-left: 0;
+    }
+    display: flex;
+    .client-block-two{
+      &:last-child{
+        margin-right: 0;
+      }
+      .inner-box{
+        .image{
+          img{
+            width: unset;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:991px) {
+  .offer-banner .content-colum {text-align: center;}
+}
+
+@media only screen and (max-width:480px) {
+  .client-block-two a {display: flex;justify-content: center;}
+}
+
+
+
+/*** 
+
+====================================================================
+  client-section two
+====================================================================
+
+***/
+.clients-section-three{
+    position: relative;
+}
+
+.client-block-three{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .image {
+        position: relative;
+        padding: 20px 20px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 10px;
+        min-height: 130px;
+        @include flex-center;
+        @include transition(all 300ms ease);
+        &:hover{
+            img {
+                &:first-child{
+                    transform: translateY(0) scaleY(1);
+                    opacity: 1;
+                    filter: blur(0);
+                }
+                &:nth-child(2){
+                    transform: translateY(-50%) scaleY(2);
+                    opacity: 0;
+                    filter: blur(10px);
+                }
+            }
+        }
+    }
+    img{
+        position:relative;
+        width: auto !important;
+        display: inline-block !important;
+        opacity: .5;
+        @include transition(all 500ms ease);
+        &:first-child{
+            position:absolute;
+            left:0px;
+            right:0px;
+            top:0px;
+            bottom:0px;
+            z-index:1;
+            margin: auto;
+            transform: translateY(50%) scaleY(2);
+            opacity: 0;
+            filter: blur(10px);
+        }
+    }
+}

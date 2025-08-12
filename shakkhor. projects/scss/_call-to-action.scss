@@ -1,0 +1,30 @@
+/*** 
+
+====================================================================
+  Call Section
+====================================================================
+
+***/
+
+.call-to-action {
+  background-color: #f8f5f0;
+  position: relative;
+  padding: 120px 0;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 327px;
+    height: 493px;
+    background-image: url(../images/icons/shape-10.png);
+    @include media-breakpoint-down(xl){
+      display: none;
+    }
+  }
+  .sec-title{
+    .sub-title{
+      margin-left: 50px;
+    }
+  }
+}

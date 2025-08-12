@@ -1,0 +1,138 @@
+
+.accordion-box {
+    position: relative;
+    .block {
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0 5px 40px rgba(0, 0, 0, .05);
+        margin-bottom: 10px;
+        .acc-btn {
+            position: relative;
+            color: var(--headings-color);
+            font-family: var(--title-font);
+            font-weight: var(--h4-font-weight);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 20px 30px;
+            padding-right: 70px;
+            transition: all 500ms ease;
+            border-bottom: 1px solid #fff;
+            .icon {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                height: 35px;
+                font-size: 18px;
+                transform: translateY(-50%);
+                line-height: 2;
+                color: var(--theme-color1);
+                @include transition(all 500ms ease);
+            }
+            &.active {
+                background-color: var(--bg-theme-color1);
+                color: #fff;
+                .icon {
+                    color: var(--text-color-bg-theme-color2);
+            
+                    &:before {
+                        content: "\f068";
+                    }
+                }
+            }
+        }
+        .acc-content {
+            position: relative;
+            display: none;
+            .content {
+                position: relative;
+                padding: 25px 30px;
+                .text {
+                    display: block;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #808287;
+                    margin-bottom: 0;
+                }
+            }
+
+            &.current {
+                display: block;
+            }
+        }
+    }
+}
+
+// Apertment Tabs
+.room-booking-tab{
+    position: relative;
+    .tab-lists{
+        border: none;
+        gap: 15px;
+        .tab-item{
+            border: 1px solid rgba(var(--theme-color-black-rgb), 0.2);
+            border-radius: 50px;
+            color: var(--theme-color-dark);
+            cursor: pointer;
+            font-family: var(--text-font2);
+            font-size: 24px;
+            font-weight: normal;
+            margin-right: 16px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            padding: 7px 20px 7px 7px;
+            position: relative;
+            z-index: 9;
+            @include transition(all 500ms ease);
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                content: "";
+                z-index: -1;
+                background-color: var(--theme-color1);
+                border-radius: inherit;
+                transform: scale(0, 1);
+                transform-origin: top right;
+                transition: -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+                transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+                transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000), -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+                transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+            }
+            &.active{
+                background-color: var(--theme-color1);
+                color: var(--theme-color-white);
+            }
+            @include media-breakpoint-down(sm) {
+              padding-right: 30px;
+            }
+            &:hover{
+                color: var(--theme-color-white);
+                &:before {
+                    transform: scale(1, 1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+}
+.room-booking-content{
+    .tab-content{
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        -webkit-transform: translateX(10px) scaleX(0);
+        transform: translateX(10px) scaleX(0);
+        @include transition(all 500ms ease);
+        &.active{
+            opacity: 1;
+            height: auto;
+            visibility: visible;
+            -webkit-transform: translate(0) scaleX(1);
+            transform: translate(0) scaleX(1);
+        }
+    }
+}

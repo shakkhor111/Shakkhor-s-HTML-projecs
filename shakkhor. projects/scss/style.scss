@@ -1,0 +1,100 @@
+/* Hoteler | Hotel Booking HTML Template
+
+Template Name: Hoteler
+Version: 1.0.0
+License: copyright commercial
+
+/************ TABLE OF CONTENTS ***************
+1. Fonts
+2. Reset
+3. Global Settings
+4. Main Header / TwO
+5. Sticky Header 
+6. Mobile Menu
+7. Section Title
+8. Main Slider
+9. Banner Section
+10. Project Section
+11. Features Section / TwO / Three / Four / Five
+12. About Section / Two
+13. Services Section / Two
+14. Call To Action / Two
+15. FAQ's Sectiom
+16. Marquee Section
+17. Fun Fact Section
+18. Testimonial Section / Two
+19. team Section 
+20, Contact Section / Two
+21. Why Choose Us / Two
+22. News Section / Two
+23. Video Section
+24. Map Section
+25. Clients Section
+26. Main Footer
+**********************************************/
+
+@import "scss-bootstrap/functions";
+@import "scss-bootstrap/variables";
+@import "scss-bootstrap/mixins";
+@import "common/root.scss";
+@import "common/mixing.scss";
+@import "common/loader.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Dynalight&display=swap');
+
+@import url('animate.css');
+@import url('jquery-ui.css');
+@import url('swiper.min.css');
+@import url('jquery.fancybox.min.css');
+@import url('linear.css');
+@import url('fontawesome-free.css');
+@import url('fontawesome.css');
+@import url('flaticon.css');
+@import url('tm-bs-mp.css');
+@import url('tm-utility-classes.css');
+
+// import SCSS components one by one
+@import "reset.scss";
+@import "button.scss";
+@import "animation.scss";
+@import "accordion.scss";
+@import "search-popup.scss";
+@import "header.scss";
+@import "mega-menu.scss";
+@import "mobile-menu.scss";
+@import "section-title.scss";
+@import "main-slider.scss";
+@import "banner.scss";
+@import "about.scss";
+@import "funfact.scss";
+@import "marquee.scss";
+@import "services.scss";
+@import "projects.scss";
+@import "offer.scss";
+@import "testimonials.scss";
+@import "team.scss";
+@import "video.scss";
+@import "room.scss";
+@import "feature.scss";
+@import "call-to-action.scss";
+@import "news.scss";
+@import "faqs.scss";
+@import "pricing.scss";
+@import "client.scss";
+@import "food.scss";
+@import "booking.scss";
+@import "why-choose-us.scss";
+@import "footer.scss";
+
+@import "shop/loader.scss";
+
+//inner
+@import "inner/page-title.scss";
+@import "inner/404.scss";
+@import "inner/contact-page.scss";
+@import "inner/service-details.scss";
+@import "inner/project-details.scss";
+@import "inner/news-details.scss";
+@import "inner/news-sidebar.scss";
+@import "inner/news-comment.scss";
+@import "inner/team-details.scss";

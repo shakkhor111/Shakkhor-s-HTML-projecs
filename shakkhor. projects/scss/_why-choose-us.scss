@@ -1,0 +1,127 @@
+/*** 
+
+====================================================================
+    Why Choose Us
+====================================================================
+
+***/
+
+.why-choose-us {
+    padding: 120px 0;
+    position: relative;
+    @include media-breakpoint-down(lg){
+        padding: 80px 0;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 75%;
+        top: 0;
+        left: 0;
+        background-color: #f8f5f0;
+    }
+    .sec-title {
+        margin-bottom: 50px;
+        .sub-title {
+          font-size: 18px;
+          letter-spacing: 3px;
+          top: 0;
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+
+  .faqs-column {
+    .accordion-box{
+        margin-top: -20px;
+        @include media-breakpoint-down(lg){
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+    }
+    .accordion-box .block {
+      background-color: transparent;
+      box-shadow: none;
+      color: var(--theme-color-black);
+    }
+    .accordion-box .block .acc-btn.active {
+      background-color: transparent;
+      box-shadow: none;
+      border-color: transparent;
+    }
+    .accordion-box .block .acc-content .content .text {
+      color: var(--theme-color-black);
+    }
+    .accordion-box .block .acc-btn {
+      color: var(--theme-color-black);
+      padding-left: 0;
+      padding-right: 0;
+      border-color: #e1e1e1;
+    }
+    .accordion-box .block .acc-btn .icon {
+      color: var(--theme-color-black);
+    }
+    .accordion-box .block .acc-content .content {
+      padding: 0;
+    }
+  }
+  .image-column {
+    position: relative;
+    .inner-column {
+        width: 100%;
+        height: 100%;
+        .image {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+  }
+  .why-choose-us-column {
+    position: relative;
+    .inner-column {
+        background-color: var(--theme-color1);
+        padding: 50px 50px 30px;
+        @include media-breakpoint-down(sm){
+            padding: 40px 20px 20px;
+        }
+        .why-choose-us-box {
+            .inner-box {
+                .image-box {
+                    border: 5px solid var(--theme-color-white);
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    height: 100%;
+                    .image {
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .content-box {
+                    .title {
+                        color: var(--theme-color-light);
+                        margin-bottom: 9px;
+                    }
+                    .text {
+                        color: var(--theme-color-light);
+                    }
+                }
+            }
+        }
+    }
+  }
+}

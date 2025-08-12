@@ -1,0 +1,178 @@
+/*** 
+
+====================================================================
+		FAQ's Sectiom
+====================================================================
+
+***/
+
+.faqs-section-home1 {
+    position: relative;
+    margin-top: -160px;
+    padding: 260px 0 70px;
+    @include background;
+    &:before{
+        @include overlay;
+        background-color: #ebf1f5;
+        opacity: .95;
+        content: "";
+    }
+}
+.faqs-section-home1 .sec-title{
+    margin-bottom: 30px;
+}
+.faqs-section-home1 .faq-column {
+    position: relative;
+    margin-bottom: 50px;
+    .inner-column {
+        position: relative;
+    }
+}
+.faqs-section-home2 {
+    position: relative;
+    margin-top: -100px;
+    padding: 200px 0 70px;
+    z-index: -1;
+    @include background;
+}
+.accordion-box.style-two {
+    position: relative;
+    background-color: #ffffff;
+    padding: 0 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0, .1);
+}
+.accordion-box.style-two .block {
+    box-shadow: none;
+    position: relative;
+    .acc-btn {
+        border-bottom: 1px solid #dddddd;
+        border-radius: 0;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -.04em;
+        line-height: 25px;
+        padding: 25px 0;
+        padding-right: 70px;
+        position: relative;
+        transition: all 500ms ease;
+        .icon {
+            position: absolute;
+            right: 0px;
+            top: 40px;
+            height: 35px;
+            font-size: 14px;
+            line-height: 38px;
+            color: var(--headings-color);
+            text-align: center;
+            transition: all 500ms ease;
+        }
+        &.active{
+            color: var(--theme-color1);
+            background-color: transparent;
+        }
+        &.active .icon {
+            color: var(--bg-theme-color1);
+            &:before {
+                content: "\f068";
+            }
+        }
+    }
+}
+.accordion-box.style-two .block .acc-content {
+    position: relative;
+    display: none;
+    .content {
+        border-bottom: 1px solid #dddddd;
+        padding: 25px 0;
+        position: relative;
+        .text {
+            display: block;
+            font-size: 16px;
+            line-height: 30px;
+            color: #7c858c;
+            margin-bottom: 0;
+        }
+    }
+    &.current {
+        display: block;
+    }
+}
+.faq-block{
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box{
+        padding-left: 70px;
+        position: relative;
+        &:hover .icon{
+            background-color: var(--bg-theme-color1)
+        }
+    }
+    .icon{
+        @include absolute;
+        @include flex-center;
+        height: 50px;
+        width: 50px;
+        color: #fff;
+        background-color: var(--bg-theme-color1);
+        border-radius: 50%;
+        font-size: 14px;
+        transition: all 300ms ease;
+    }
+    h4{
+        font-size: 18px;
+        line-height: 1.2em;
+        color: var(--theme-color3);
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .text{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+.pie-graph {
+    position: relative;
+    .graph-outer{
+        position: relative;
+        @include flex-center;
+        margin-bottom: 15px;
+        .inner-text{
+            @include overlay;
+            @include flex-center;
+            font-size: 24px;
+            color: var(--theme-color2);
+            font-weight: 400;
+            line-height: 1em;
+        }
+    }
+    .title{
+        font-size: 18px;
+        line-height: 1.2em;
+        margin-bottom: 0;
+    }
+}
+
+.home-2-tabs{
+    position: relative;
+    .nav-tabs {
+        border-bottom: none;
+        .nav-link{
+            background-color: #fff;
+            border-color: transparent;
+            border-radius: 5px;
+            box-shadow: 0px 1px 72px 0px rgba(0,0,0,0.14);
+            color: #151515;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 35px;
+            @media (max-width: 425px) {
+              margin-bottom: 20px;
+            }
+            &.active{
+                background-color: #151515;
+                color: #fff;
+            }
+        }
+    }
+}

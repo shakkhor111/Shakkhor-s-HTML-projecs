@@ -1,0 +1,158 @@
+/***
+
+====================================================================
+    Product Section One
+====================================================================
+
+***/
+
+.gallery-section-one {
+  padding: 120px 0;
+}
+
+.gallery-block-one {
+  .inner-box {
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      .content-box {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+        .title {
+          opacity: 1;
+          visibility: visible;
+          transform: translate(0);
+        }
+        .theme-btn {
+          opacity: 1;
+          visibility: visible;
+          transform: translate(0);
+        }
+      }
+      .image-box{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .image-box {
+      .image{
+        position: relative;
+        overflow: hidden;
+        img{
+          height: 430px;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(sm){
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .content-box {
+    background-color: #222222;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 30px;
+    position: absolute;
+    visibility: hidden;
+    transform: translateY(100%);
+    z-index: 2;
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(sm){
+      padding: 20px;
+    }
+    .title {
+      color: var(--theme-color-light);
+      font-family: 'Gilda Display';
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(100%);
+      @include transition(all 300ms ease);
+      @include media-breakpoint-down(sm){
+        font-size: 20px;
+      }
+    }
+    .theme-btn {
+      color: #6A6F78;
+      font-family: 'Barlow';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      transform: translateY(100%);
+      visibility: hidden;
+      @include transition(all 300ms ease);
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+/***
+
+====================================================================
+    Product Section Two
+====================================================================
+
+***/
+
+.gallery-section-two {
+  position: relative;
+  padding: 120px 30px;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+}
+
+.gallery-block-two {
+  .inner-box {
+    overflow: hidden;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 80%;
+      background: linear-gradient(to top, #000, transparent);
+      z-index: 1;
+      opacity: 0.5;
+      content: "";
+      @include transition(all 300ms ease);
+    }
+    &:hover {
+      &:before {
+        height: 0;
+      }
+      .image-box{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .image-box {
+      height: 100%;
+      .image{
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        img{
+          height: 100%;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(sm){
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

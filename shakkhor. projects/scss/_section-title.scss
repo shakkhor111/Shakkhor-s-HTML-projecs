@@ -1,0 +1,117 @@
+/*** 
+
+====================================================================
+Section Title
+====================================================================
+
+***/
+
+.sec-title {
+  position: relative;
+  margin-bottom: 50px;
+  &.white {
+    .sub-title {
+      &:before {
+        display: none;
+      }
+    }
+    h2 {
+      color: #fff;
+    }
+  }
+  .sub-title{
+    position: relative;
+    color: var(--sec-title-subtitle-color);
+    font-family: var(--sec-title-subtitle-font-family);
+    font-size: var(--sec-title-subtitle-font-size);
+    font-weight: var(--sec-title-subtitle-font-weight);
+    line-height: var(--sec-title-subtitle-line-height);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 7px;
+    letter-spacing: 7px;
+    top: -9px;
+    @include media-breakpoint-down(sm){
+      letter-spacing: 1px;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -50px;
+      width: 37px;
+      height: 10px;
+      background-image: url(../images/icons/before.png);
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 100%;
+      margin-left: 5px;
+      width: 37px;
+      height: 10px;
+      background-image: url(../images/icons/before.png);
+    }
+    &.style-two {
+      &:before {
+        display: none;
+      }
+    }
+    &.style-three {
+      margin-left: 50px;
+    }
+    &.style-four {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+    &.style-five {
+      color: var(--theme-color6);
+      &:before,
+      &:after {
+        filter: brightness(0) saturate(100%) invert(53%) sepia(48%) saturate(5138%) hue-rotate(50deg) brightness(94%) contrast(92%);
+      }
+    }
+    &.style-six {
+      color: var(--theme-color7);
+      &:before,
+      &:after {
+            filter: brightness(0) saturate(100%) invert(65%) sepia(81%) saturate(519%) hue-rotate(167deg) brightness(103%) contrast(85%);
+      }
+    }
+  }
+  h2 {
+    position: relative;
+    display: block;
+    font-size: var(--sec-title-font-size);
+    color: var(--sec-title-color);
+    font-family: var(--sec-title-font-family);
+    font-weight: var(--sec-title-font-weight);
+    margin-bottom: 0;
+    z-index: 2;
+    @include media-breakpoint-down(xl){
+      font-size: 44px;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 36px;
+      br {
+        display: none;
+      }
+    }
+  }
+  .text {
+    margin-top: 24px;
+  }
+  &.light{
+    .sub-title,
+    .text,
+    h2,
+    h1{
+      color: #fff;
+    }
+  }
+}
+
+

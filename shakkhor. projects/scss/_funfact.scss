@@ -1,0 +1,195 @@
+/*** 
+
+====================================================================
+    Funfact Sectiom
+====================================================================
+
+***/
+
+.funfact-section {
+  padding: 79px 0 110px;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 79px 0 29px;
+  }
+  .fact-counter {
+    margin: 0 -100px;
+  }
+  .counter-block-one {
+    .inner-box {
+      margin-top: -32px;
+    }
+  }
+  &.style-two {
+    .fact-counter {
+      margin: 0 -60px;
+    }
+    .counter-block-one {
+      .inner-box {
+        .counter-text {
+          text-align: left;
+          top: calc(50% - 9px);
+          margin-left: 62px;
+        }
+      }
+    }
+  }
+}
+.counter-block-one {
+  &:last-child {
+    .inner-box {&:before {display: none;}}
+  }
+  .inner-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 50px;
+    }
+    &:before {
+      background-color: #dddede;
+      content: "";
+      height: 60px;
+      position: absolute;
+      top: 40px;
+      right: -30px;
+      width: 1px;
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+    .count-box {
+      color: rgba(var(--theme-color1-rgb), .3);
+      display: block;
+      font-family: var(--title-font);
+      font-size: 128px;
+      font-weight: 400;
+      line-height: 96px;
+      position: relative;
+      margin-bottom: 0;
+      @include media-breakpoint-down(sm){
+        font-size: 110px;
+      }
+    }
+    .counter-text {
+      color: #222222;
+      font-family: var(--text-font);
+      font-family: var(--title-font);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28.8px;
+      margin-bottom: 0;
+      position: absolute;
+      text-align: center;
+      top: calc(50% + 9px);
+      @include media-breakpoint-down(sm){
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+/*** 
+
+====================================================================
+    Funfact Sectiom Two
+====================================================================
+
+***/
+.funfact-section-two{
+  padding: 125px 0;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 125px 0 75px;
+  }
+}
+
+.counter-block-two {
+  &:last-child {
+    .inner-box {&:before {display: none;}}
+  }
+  .inner-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 50px;
+    }
+    &:before {
+      background-color: #dddede;
+      content: "";
+      height: 60px;
+      position: absolute;
+      right: -30px;
+      width: 1px;
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+    .count-box {
+      color: rgba(191, 168, 136, .15);
+      display: block;
+      font-family: var(--title-font);
+      font-size: 148px;
+      font-weight: 400;
+      line-height: 96px;
+      position: relative;
+      margin-bottom: 0;
+      @include media-breakpoint-down(sm){
+        font-size: 110px;
+      }
+    }
+    .counter-text {
+      color: #222222;
+      font-family: var(--text-font);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28.8px;
+      margin-bottom: 0;
+      position: absolute;
+      top: 20%;
+      right: 20px;
+      @include media-breakpoint-down(xl){
+        width: 100%;
+        right: 0;
+        text-align: center;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+/*** 
+
+====================================================================
+    Funfact Sectiom Three
+====================================================================
+
+***/
+.funfact-section-three{
+  padding: 79px 0;
+  position: relative;
+  .outer-box {
+    border-bottom: 1px solid rgba(var(--theme-color-black-rgb), 0.1);
+    padding-bottom: 72px;
+    .counter-block-two {
+      .inner-box {
+        &:before {
+          bottom: 0;
+        }
+        .counter-text {
+          top: 38%;
+          right: 40px;
+        }
+      }
+    }
+  }
+}

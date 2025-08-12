@@ -1,0 +1,302 @@
+:root {
+  --dark-color1: #171717;
+  --dark-color2: #222020;
+  --dark-color3: #2b242b;
+}
+
+body,
+.page-wrapper,
+.sticky-header,
+.header-style-two .header-lower .logo-box:before,
+.bg-dark-1,
+.testimonial-section-two.style-light,
+.service-section-two .outer-box .slick-slider .slick-arrow,
+.news-section,
+.booking-form-column.bg-light-style .inner-column:before,
+.news-block .inner-box .content-box .read-more {
+  background-color: var(--dark-color1) !important;
+}
+
+.testimonial-block-four .inner-box .info-box .icon {
+  color: var(--dark-color1);
+}
+
+a {
+  color: inherit;
+}
+
+.btn-style-one,
+.offer-banner .outer-box,
+.header-style-one .header-lower .logo-box:before,
+.header-style-one .main-box .btn-box:before,
+.header-style-four .header-top,
+.header-style-three .sticky-header.fixed-header,
+.header-style-four .sticky-header.fixed-header,
+.header-style-four .sticky-header.fixed-header,
+.header-style-two.style-light-theme,
+.header-style-two.style-light-theme .main-box,
+.header-style-two .main-box,
+.bg-dark-2,
+.room-service-block-one .inner-box,
+.contact-section .form-column .contact-form,
+.team-block .info-box,
+.contact-section.style-three .bg-image:before,
+.services-section-five,
+.service-section,
+.feature-row .content-column .inner-column,
+.pricing-section-two,
+.call-to-action,
+.testimonial-block-four .inner-box,
+.pricing-section,
+.service-section-two,
+.testimonial-section,
+.contact-section,
+.news-section,
+.booking-form-column.bg-light-style .inner-column .bk-form .frm-field input,
+.booking-form-column.bg-light-style .inner-column .bk-form .frm-field select {
+  background-color: var(--dark-color2) !important;
+}
+
+.contact-section.style-five .form-column .contact-form {
+  background-color: var(--theme-color-black) !important;
+}
+
+.team-block .info-box {
+  background-color: var(--dark-color1) !important;
+}
+
+.news-section:before {
+  opacity: 0 !important;
+}
+
+.header-style-four.style-home14 {
+  background-color: var(--theme-color-dark);
+}
+
+.banner-section12 {
+  background-color: var(--theme-color-dark);
+}
+
+.feature-row14 .content-column .inner-column {
+  background-color: var(--theme-color-dark);
+}
+
+.why-choose-us:before {
+  background-color: var(--theme-color-dark2);
+}
+
+.why-choose-us .faqs-column .accordion-box .block .acc-btn {
+  color: var(--theme-color-light);
+}
+
+.why-choose-us .faqs-column .accordion-box .block .acc-content .content .text {
+  color: var(--text-color);
+}
+
+.checkout-form-section-two .checkout-form,
+.service-block-three .inner-box .content-box,
+.header-style-five .sticky-header.fixed-header,
+.banner-section-six,
+.rooms-section,
+.checkout-form-section.v3 .checkout-form {
+  background: var(--dark-color2);
+}
+
+.about-section-four .image-column .inner-column .image-box .image,
+.about-section-four .image-column .inner-column .image-box .image-2,
+.pricing-block-five .inner-box .content-column .inner-column .pricing-amount {
+  border-color: var(--dark-color2);
+}
+
+.bg-dark-3,
+.video-section-three .btn-box .play-now-two,
+.progress-info .progress .bar,
+.about-section-seven,
+.contact-section.style-three .form-column .contact-form input:not([type=submit]),
+.contact-section.style-three .form-column .contact-form textarea,
+.about-section-four .outer-box,
+.testimonial-block-five .content-box .text,
+.contact-section.style-two,
+.service-block .inner-box,
+.header-style-four.style-dark .header-top .info-user,
+.header-style-four.style-dark .header-top .inner-box .top-left span .icon,
+.news-block .inner-box .content-box {
+  background-color: var(--dark-color3) !important;
+}
+
+.about-section-two .image-column .image-2 img,
+.about-section-two .image-column .image-1 img,
+.contact-form .select2-container--default .select2-selection--single,
+.contact-form input:not([type=submit]),
+.contact-form textarea,
+.contact-form select,
+.video-section-three .btn-box .play-now-two,
+.pricing-block-four .inner-box .content-column .inner-column,
+.service-block .inner-box {
+  border-color: var(--dark-color3);
+}
+
+.marquee .text.text-style2 {
+  -webkit-text-fill-color: var(--dark-color3);
+}
+
+.marquee .text {
+  -webkit-text-stroke-color: var(--theme-color1);
+}
+
+.pricing-block .inner-box .image-column .image-box .image-2 {
+  outline-color: var(--dark-color3);
+}
+
+.service-block-six .icon-box .bg-shap svg path {
+  fill: var(--dark-color3);
+}
+
+.about-section .content-column .info-box {
+  border-bottom: 1px solid var(--dark-color2);
+}
+
+.pricing-block-five .inner-box .content-column .inner-column {
+  border-color: var(--dark-color3);
+}
+
+.btn-style-three,
+.work-tabs .tab-buttons .tab-btn {
+  background-color: #000;
+}
+
+.service-block-two .inner-box .hover-content .icon,
+.about-section-two .content-column .float-text {
+  color: #3a3a3a;
+}
+
+.blockquote-one {
+  color: #8d8d8d;
+}
+
+.sticky-header .mobile-nav-toggler,
+.main-header .info-btn small,
+.main-menu .navigation > li > a,
+.header-style-two .main-menu .navigation > li > a,
+.header-style-two .sticky-header .main-menu .navigation > li > a,
+.header-style-three .sticky-header.fixed-header .main-menu .navigation > li > a,
+.header-style-two .sticky-header .mobile-nav-toggler,
+.list-style-one li,
+.main-header .ui-btn,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.title a,
+.sec-title h2,
+.service-block-three .inner-box .content-box .title a,
+.testimonial-section-two .swiper-button-next:after,
+.testimonial-section-two .swiper-button-prev:after,
+.pricing-block-two .inner-box .content-box .title span,
+.counter-block-one .inner-box .counter-text,
+.testimonial-block-five .info-box .name,
+.service-section-two .outer-box .slick-slider .slick-arrow:before,
+.counter-block-two .inner-box .counter-text,
+.pricing-block .inner-box .content-column .inner-column .pricing-amount span,
+.header-style-two .mobile-nav-toggler {
+  color: #fff !important;
+}
+
+.about-section-five .image-column .exp-info {
+  border-color: #fff;
+}
+
+.pricing-block-four .inner-box .content-column .inner-column .pricing-amount span,
+.about-section-four .content-column .inner-column .inner .list-style-two li,
+.testimonial-block-four .content-box .text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-style-one,
+.testimonial-block-four .info-box {
+  border-color: #2c2a2a;
+}
+
+.feature-block .count {
+  -webkit-text-stroke-color: #fff;
+}
+
+.counter-block-two .count-box {
+  -webkit-text-stroke-color: var(--bg-theme-color2);
+}
+
+.header-style-two {
+  background-color: unset;
+}
+
+.bg-image-unset,
+.funfact-section .bg.bg-image {
+  background-image: unset !important;
+}
+
+.banner-section-two .bottom-box:before,
+.contact-section:before {
+  opacity: 0.1;
+}
+
+.header-style-two .outer-box .search-btn img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.news-section-two::before {
+  background-image: url(../images/resource/pattern-4-dark.jpg);
+}
+
+.contact-form .form-group textarea {
+  background-color: #0a090f;
+}
+.contact-form .form-group input:not([type=submit]) {
+  background-color: #0a090f;
+}
+
+.newsletter-form-three .form-group input[type=text],
+.newsletter-form-three .form-group input[type=email] {
+  background-color: rgba(22, 36, 62, 0.7);
+}
+
+.client-block.dark-style img,
+.about-section-seven .content-column .bottom-box .auther-info .image {
+  display: inline-block !important;
+  width: auto !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: unset;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  opacity: 0.4;
+}
+
+.news-section:before,
+.about-section-six .image-column .inner-column::after,
+.pricing-block .inner-box .image-column .inner-column:before,
+.pricing-section .anim-icons .image-4,
+.service-section:before,
+.about-section-three .image-column .image-1:after {
+  opacity: 0.1;
+}
+
+.about-section15 .image-column .inner-column:before {
+  -webkit-filter: brightness(0) invert(0);
+          filter: brightness(0) invert(0);
+}
+
+.service-section15 .service-block-six .inner-box {
+  background-color: var(--dark-color2);
+}
+
+.feature-row15 .content-column .inner-column {
+  background-color: var(--dark-color2);
+}
+
+.contact-section.style-six .form-column .inner-column {
+  background-color: var(--dark-color2);
+}
