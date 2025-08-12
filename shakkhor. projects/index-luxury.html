@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Hoteler - Hotel Booking HTML Template | Home Page 01</title>
+<title>Hoteler - Hotel Booking HTML Template | LuxuryHome Page 01</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/flatpickr.min.css" rel="stylesheet">
@@ -12,6 +12,9 @@
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&display=swap" rel="stylesheet">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -24,32 +27,13 @@
   <div class="preloader"></div>
 
   <!-- Main Header-->
-  <header class="main-header header-style-five">
-    <div class="header-top">
-      <div class="inner-box">
-        <!-- Top-left -->
-        <div class="top-left">
-          <ul class="social-icon-one">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-          </ul>
-        </div>
-        <!-- top-right -->
-        <div class="top-right">
-          <span><i class="icon fa-solid fa-envelope"></i> needhelp@company.com</span>
-          <span><i class="icon fa-sharp fa-solid fa-location-dot"></i> 88 Broklyn Golden Street. New York</span>
-        </div>
+  <header class="main-header header-style-four style-beach style-home13">
+    <!-- Main box -->
+    <div class="main-box">
+      <div class="logo-box">
+        <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="" title="Hoteler"></a></div>
       </div>
-    </div>
-    <div class="header-lower">
-      <!-- Main box -->
-      <div class="main-box">
-        <div class="logo-box">
-          <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title="Hoteler"></a></div>
-        </div>
-
+      
         <!--Nav Box-->
         <div class="nav-outer">
           <nav class="nav main-menu">
@@ -88,8 +72,6 @@
                         <li><a href="index-beach-2.html">Beach Resort 02</a></li>
                         <li><a href="index-luxury.html">Luxury Hotel 01</a></li>
                         <li><a href="index-luxury-2.html">Luxury Hotel 02</a></li>
-                        <li><a href="index-luxury-3.html">Luxury Hotel 03</a></li>
-                        <li><a href="index-newlayout.html">Luxury Hotel 03</a></li>
                         <li><a href="index-luxury-3.html">Luxury Hotel 03</a></li>
                       </ul>
                     </div>
@@ -190,21 +172,18 @@
           </nav>
           <!-- Main Menu End-->
         </div>
-
-        <div class="outer-box">
-          <div class="ui-btn-outer">
-            <button class="ui-btn ui-btn search-btn">
-              <span class="icon lnr lnr-icon-search"></span>
-            </button>
-            <a href="shop-cart.html" class="ui-btn cart-btn">
-              <i class="lnr-icon-shopping-cart"></i>
-              <span class="items-count">0</span>
-            </a>
-          </div>
-          <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-          <!-- Mobile Nav toggler -->
+      <div class="outer-box">
+        <div class="ui-btn-outer">
+          <button class="ui-btn ui-btn search-btn">
+            <span class="icon lnr lnr-icon-search"></span>
+          </button>
+          <a href="page-contact.html" class="theme-btn btn-style-two"><span class="btn-title">Book Now</span></a>
         </div>
+        <div class="mobile-nav-toggler"><i class="icon lnr-icon-bars"></i></div>
+        <!-- Mobile Nav toggler -->
       </div>
+    </div>
+    <div class="auto-container">
       <!-- Mobile Menu  -->
       <div class="mobile-menu">
         <div class="menu-backdrop"></div>
@@ -250,8 +229,8 @@
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </nav>
-      </div><!-- End Mobile Menu -->
-
+      </div>
+      <!-- End Mobile Menu -->
       <!-- Header Search -->
       <div class="search-popup">
         <span class="search-back-drop"></span>
@@ -296,154 +275,395 @@
   <!--End Main Header -->
 
   <!-- Banner Section -->
-  <section class="banner-section-seven">
-    <div class="banner-slider banner-slider-home1">
-
-      <div class="banner-slide">
-        <div class="outer-box">
-          <figure class="image-1 wow fadeInUp tm-gsap-img-parallax overflow-hidden"><img src="images/banner/banner1-1.jpg" alt=""></figure>
-          <div class="content-box">
-            <div class="star-rating" data-animation-in="fadeInUp" data-wow-delay="300ms">
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-              <i class="fa-sharp fa-solid fa-star-sharp"></i>
-            </div>
-            <h1 data-animation-in="fadeInUp" data-delay-in="0.3">Book Your Dream Hotel <br />With Hoteler</h1>
+  <section class="banner-section-luxury">
+    <div class="bg bg-image overflow-hidden" style="background-image: url(images/banner/banner-luxury1.jpg);"></div>
+    <div class="auto-container">
+      <!-- Content Column -->
+      <div class="content-column">
+        <div class="inner-column">
+          <div class="text">LUXURY HOTEL</div>
+          <div class="star-rating wow fadeInUp" data-wow-delay="300ms">
+            <i class="fa-sharp fa-solid fa-star-sharp"></i>
+            <i class="fa-sharp fa-solid fa-star-sharp"></i>
+            <i class="fa-sharp fa-solid fa-star-sharp"></i>
+            <i class="fa-sharp fa-solid fa-star-sharp"></i>
+            <i class="fa-sharp fa-solid fa-star-sharp"></i>
           </div>
+          <h1 class="title wow fadeInUp" data-wow-delay="600ms">Whispers Of Luxury Echoes Home</h1>
         </div>
       </div>
-
     </div>
   </section>
   <!-- End Banner Section -->
 
-  
-  <!-- pricing-section -->
-  <section class="pricing-section">
-    <div class="anim-icons">
-      <img class="image-4" src="images/icons/shape-22.png" alt="">
-      <img class="image-3" src="images/icons/shape-21.png" alt="">
-    </div>
+  <!-- Form Section -->
+  <div class="checkout-form-section v3">
     <div class="auto-container">
-      <!-- pricing-block -->
-      <div class="pricing-block mb-0">
-        <div class="inner-box content-align-left">
-          <div class="row">
-            <div class="image-column col-lg-6 col-md-6">
-              <div class="inner-column">
-                <div class="text">Luxury Hotel</div>
-                <div class="image-box">
-                  <figure class="image-1 overlay-anim wow reveal-right tm-gsap-img-parallax overflow-hidden"><img src="images/resource/pricing1-3.jpg" alt=""></figure>
-                  <figure class="image-2 overlay-anim wow reveal-right"><img src="images/resource/pricing1-4.jpg" alt=""></figure>
-                </div>
-              </div>
-            </div>
-            <div class="content-column col-lg-6 col-md-6">
-              <div class="inner-column wow fadeInLeft">
-                <h2 class="pricing-title">Couple Room Suite</h2>
-                <span class="pricing-amount">$250<span>/ Night</span></span>
-                <div class="list-box">
-                  <ul class="list-style-two">
-                    <li><i class="icon fa fa-circle-check"></i> Pick & Drop Service</li>
-                    <li><i class="icon fa fa-circle-check"></i> Swimming Pool</li>
-                  </ul>
-                  <ul class="list-style-two">
-                    <li><i class="icon fa fa-circle-check"></i> City Tour Guide</li>
-                    <li><i class="icon fa fa-circle-check"></i> Fibre Internet</li>
-                  </ul>
-                </div>
-                <div class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet et vivamus nostra torquent porttitor</div>
-                <div class="btn-box">
-                  <a href="page-contact.html" class="btn-style-four">Book Now</a>
-                </div>
-              </div>
-            </div>
+      <div class="checkout-form">
+        <div class="checkout-field">
+          <h6>Check in</h6>
+          <div class="chk-field">
+            <input class="date-pick" type="text" placeholder="20 June, 2025" />
+            <i class="fa fa-calendar"></i>
           </div>
         </div>
-      </div>
-      <!-- pricing-block -->
-      <div class="pricing-block">
-        <div class="inner-box">
-          <div class="row">
-            <div class="image-column col-lg-6 col-md-6">
-              <div class="inner-column">
-                <div class="text">Luxury Hotel</div>
-                <div class="image-box">
-                  <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/pricing1-1.jpg" alt=""></figure>
-                  <figure class="image-2 overlay-anim wow reveal-left"><img src="images/resource/pricing1-2.jpg" alt=""></figure>
-                </div>
-              </div>
-            </div>
-            <div class="content-column col-lg-6 col-md-6">
-              <div class="inner-column wow fadeInLeft">
-                <h2 class="pricing-title">Double Room Suite</h2>
-                <span class="pricing-amount">$250<span>/ Night</span></span>
-                <div class="list-box">
-                  <ul class="list-style-two">
-                    <li><i class="icon fa fa-circle-check"></i> Pick & Drop Service</li>
-                    <li><i class="icon fa fa-circle-check"></i> Swimming Pool</li>
-                  </ul>
-                  <ul class="list-style-two">
-                    <li><i class="icon fa fa-circle-check"></i> City Tour Guide</li>
-                    <li><i class="icon fa fa-circle-check"></i> Fibre Internet</li>
-                  </ul>
-                </div>
-                <div class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet et vivamus nostra torquent porttitor</div>
-                <div class="btn-box">
-                  <a href="page-contact.html" class="btn-style-four">Book Now</a>
-                </div>
-              </div>
-            </div>
+        <div class="checkout-field">
+          <h6>Check out</h6>
+          <div class="chk-field">
+            <input class="date-pick" type="text" placeholder="20 June, 2025" />
+            <i class="fa fa-calendar"></i>
           </div>
         </div>
-      </div>
-      <!-- pricing-block -->
-      <div class="pricing-block mb-0">
-        <div class="inner-box content-align-left">
-          <div class="row">
-            <div class="image-column col-lg-6 col-md-6">
-              <div class="inner-column">
-                <div class="text">Luxury Hotel</div>
-                <div class="image-box">
-                  <figure class="image-1 overlay-anim wow reveal-right tm-gsap-img-parallax overflow-hidden"><img src="images/resource/pricing1-3.jpg" alt=""></figure>
-                  <figure class="image-2 overlay-anim wow reveal-right"><img src="images/resource/pricing1-4.jpg" alt=""></figure>
-                </div>
-              </div>
-            </div>
-            <div class="content-column col-lg-6 col-md-6">
-              <div class="inner-column wow fadeInLeft">
-                <h2 class="pricing-title">Couple Room Suite</h2>
-                <span class="pricing-amount">$250<span>/ Night</span></span>
-                <div class="list-box">
-                  <ul class="list-style-two">
-                    <li><i class="icon fa fa-circle-check"></i> Pick & Drop Service</li>
-                    <li><i class="icon fa fa-circle-check"></i> Swimming Pool</li>
-                  </ul>
-                  <ul class="list-style-two">
-                    <li><i class="icon fa fa-circle-check"></i> City Tour Guide</li>
-                    <li><i class="icon fa fa-circle-check"></i> Fibre Internet</li>
-                  </ul>
-                </div>
-                <div class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet et vivamus nostra torquent porttitor</div>
-                <div class="btn-box">
-                  <a href="page-contact.html" class="btn-style-four">Book Now</a>
-                </div>
-              </div>
-            </div>
+        <div class="checkout-field br-0">
+          <h6>Room</h6>
+          <div class="chk-field">
+            <i class="fa fa-angle-down"></i>
+            <select>
+              <option>Standard Room Size </option>
+              <option>Standard Room Size </option>
+              <option>Standard Room Size </option>
+              <option>Standard Room Size </option>
+            </select>
           </div>
         </div>
+        <a href="" class="theme-btn btn-style-one"><span class="btn-title">check now</span></a>
       </div>
+    </div>
+  </div>
+  <!-- End Form Section -->
 
+  <!-- About Section -->
+  <section class="about-section style-luxury pb-0">
+    <div class="anim-icons"><img src="images/icons/shape-34.png" alt=""></div>
+    <div class="auto-container">
+      <div class="row">
+        <!-- Content Column -->
+        <div class="content-column col-lg-6 order-lg-2 wow fadeInRight" data-wow-delay="600ms">
+          <div class="inner-column">
+            <div class="sec-title">
+              <span class="sub-title style-two">LUXURY HOTELer</span>
+              <h2>Welcome to a Hoteler Where Luxury Knows No Limits</h2>
+              <div class="text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </div>
+            </div>
+            <ul class="list-style-two">
+              <li><i class="icon fa fa-circle-check"></i> Sed ut perspiciatis unde omnis iste natus error sit voluptatem</li>
+              <li><i class="icon fa fa-circle-check"></i> Accusantium doloremque laudantium, totam rem aperiam</li>
+              <li><i class="icon fa fa-circle-check"></i> But I must explain to you how all this mistaken idea of</li>
+            </ul>
+            <div class="btn-box">
+              <a href="page-about.html" class="theme-btn btn-style-two"><span class="btn-title">Discover More</span></a>
+            </div>
+          </div>
+        </div>
+        <!-- Image Column -->
+        <div class="image-column col-md-8 col-lg-6">
+          <div class="inner-column wow fadeInLeft">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="image-1 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/about22-1.jpg" alt=""></figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="image-2 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/about22-2.jpg" alt=""></figure>
+                <figure class="image-3 overlay-anim wow reveal-left tm-gsap-img-parallax overflow-hidden"><img src="images/resource/about22-3.jpg" alt=""></figure>
+              </div>
+            </div>
+            <img class="icon-img wow fadeInRight" data-wow-delay="400ms" src="images/resource/about21-3.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- End pricing-section -->
+  <!--Emd About Section -->
+
+  <!-- Room-section -->
+  <section class="room-service-section pt-120 pb-90">
+    <div class="container-fluid">
+      <div class="sec-title text-center">
+        <span class="sub-title">CUSTOMER SERVICES</span>
+        <h2>Book your stay and <br />relax in luxury</h2>
+      </div>
+      <div class="row">
+        <!-- Block -->
+        <div class="room-service-block-one col-lg-3 col-sm-6 wow fadeInUp">
+          <div class="inner-box">
+            <div class="image-box">
+              <figure class="image mb-0"><a href="room-details.html"><img src="images/resource/room3-1.jpg" alt=""></a></figure>
+            </div>
+            <div class="content-box">
+              <div class="inner-box">
+                <h4 class="title"><a href="room-details.html">Royal Suite</a></h4>
+                <div class="price">$199/ Night</div>
+              </div>
+              <div class="facilities-box align-items-center d-flex justify-content-between">
+                <ul class="facilities-list">
+                  <li><i class="fal fa-circle-user me-2"></i> 1-2 Persons</li>
+                  <li><i class="fal fa-bed me-2"></i> King Size Bed</li>
+                </ul>
+                <ul class="facilities-list">
+                  <li><i class="fal fa-bath me-2"></i> Bathtub</li>
+                  <li><i class="fal fa-wifi me-2"></i> Free Wifi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block -->
+        <div class="room-service-block-one col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
+          <div class="inner-box">
+            <div class="image-box">
+              <figure class="image mb-0"><a href="room-details.html"><img src="images/resource/room3-2.jpg" alt=""></a></figure>
+            </div>
+            <div class="content-box">
+              <div class="inner-box">
+                <h4 class="title"><a href="room-details.html">Premier Room</a></h4>
+                <div class="price">$299/ Night</div>
+              </div>
+              <div class="facilities-box align-items-center d-flex justify-content-between">
+                <ul class="facilities-list">
+                  <li><i class="fal fa-circle-user me-2"></i> 1-2 Persons</li>
+                  <li><i class="fal fa-bed me-2"></i> King Size Bed</li>
+                </ul>
+                <ul class="facilities-list">
+                  <li><i class="fal fa-bath me-2"></i> Bathtub</li>
+                  <li><i class="fal fa-wifi me-2"></i> Free Wifi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block -->
+        <div class="room-service-block-one col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="600ms">
+          <div class="inner-box">
+            <div class="image-box">
+              <figure class="image mb-0"><a href="room-details.html"><img src="images/resource/room3-3.jpg" alt=""></a></figure>
+            </div>
+            <div class="content-box">
+              <div class="inner-box">
+                <h4 class="title"><a href="room-details.html">Skyline Suite</a></h4>
+                <div class="price">$399/ Night</div>
+              </div>
+              <div class="facilities-box align-items-center d-flex justify-content-between">
+                <ul class="facilities-list">
+                  <li><i class="fal fa-circle-user me-2"></i> 1-2 Persons</li>
+                  <li><i class="fal fa-bed me-2"></i> King Size Bed</li>
+                </ul>
+                <ul class="facilities-list">
+                  <li><i class="fal fa-bath me-2"></i> Bathtub</li>
+                  <li><i class="fal fa-wifi me-2"></i> Free Wifi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Block -->
+        <div class="room-service-block-one col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="900ms">
+          <div class="inner-box">
+            <div class="image-box">
+              <figure class="image mb-0"><a href="room-details.html"><img src="images/resource/room3-4.jpg" alt=""></a></figure>
+            </div>
+            <div class="content-box">
+              <div class="inner-box">
+                <h4 class="title"><a href="room-details.html">Tripple Room</a></h4>
+                <div class="price">$499/ Night</div>
+              </div>
+              <div class="facilities-box align-items-center d-flex justify-content-between">
+                <ul class="facilities-list">
+                  <li><i class="fal fa-circle-user me-2"></i> 1-2 Persons</li>
+                  <li><i class="fal fa-bed me-2"></i> King Size Bed</li>
+                </ul>
+                <ul class="facilities-list">
+                  <li><i class="fal fa-bath me-2"></i> Bathtub</li>
+                  <li><i class="fal fa-wifi me-2"></i> Free Wifi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Room section -->
+
+  <!-- Features Section -->
+  <section class="features-section style-luxury">
+    <div class="auto-container">
+      <div class="outer-box">
+        <div class="row">
+          <div class="content-column col-xl-6 col-lg-6 wow fadeInRight" data-wow-delay="600ms">
+            <div class="inner-column">
+              <div class="sec-title mb-0"> <span class="sub-title style-two">Hoteler Facilities</span>
+                <h2 class="words-slide-up text-split">We are here to help you get Hoteler</h2>
+                <div class="text">These hotels are known for their elegant design, exceptional attention to detail, and often boast features</div>
+              </div>
+              <div class="btn-box">
+                <a href="page-about.html" class="theme-btn btn-style-two"><span class="btn-title">Room & Suites</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- Features Column -->
+          <div class="features-column col-xl-6 col-lg-6 wow fadeInLeft" data-wow-delay="600ms">
+            <div class="inner-column"> 
+              <!-- Feature Block -->
+              <div class="feature-block">
+                <div class="inner-box">
+                  <div class="box-number">01</div>
+                  <div class="icon-box"><i class="icon flaticon-bed-2"></i></div>
+                  <div class="content-box">
+                    <h4 class="title">The Health Club & Pool</h4>
+                    <a class="read-more" href="page-about.html">READ MORE</a>
+                    <div class="bg-image" style="background-image:url(./images/resource/feature1-1.jpg);"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Feature Block -->
+              <div class="feature-block">
+                <div class="inner-box">
+                  <div class="box-number">02</div>
+                  <div class="icon-box"><i class="icon flaticon-travel"></i></div>
+                  <div class="content-box">
+                    <h4 class="title">Historic Restaurent Renovation</h4>
+                    <a class="read-more" href="page-about.html">READ MORE</a>
+                    <div class="bg-image" style="background-image:url(./images/resource/feature1-1.jpg);"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Feature Block -->
+              <div class="feature-block">
+                <div class="inner-box">
+                  <div class="box-number">03</div>
+                  <div class="icon-box"><i class="icon flaticon-car"></i></div>
+                  <div class="content-box">
+                    <h4 class="title">Lifetime Achievement 2021</h4>
+                    <a class="read-more" href="page-about.html">READ MORE</a>
+                    <div class="bg-image" style="background-image:url(./images/resource/feature1-1.jpg);"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Features Section -->
+
+  <!-- About Section -->
+  <section class="about-section-luxury">
+    <div class="bg bg-image wow reveal-top tm-gsap-img-parallax overflow-hidden">
+      <img src="images/background/bg-about1.jpg" alt="Image">
+      <div class="btn-box">
+        <a class="play-now-two" href="https://www.youtube.com/watch?v=Fvae8nxzVz4" data-fancybox="gallery" data-caption="">
+          <i class="fa-solid fa-play"></i>
+          <span class="ripple"></span>
+        </a>
+      </div>
+    </div>
+    <div class="icon icon-about-shape1 wow fadeInLeft bounce-y" data-wow-delay="600ms" style="background-image: url(./images/icons/shape-dot.png)"></div>
+    <div class="outer-box">
+      <div class="row">
+        <!-- Content Column -->
+        <div class="content-column col-md-6 offset-md-6 wow fadeInRight" data-wow-delay="300ms">
+          <div class="anim-icons"><img src="images/icons/shape-35.png" alt=""></div>
+          <div class="inner-column">
+            <div class="content-box">
+              <div class="sec-title">
+                <span class="sub-title style-two">Hoteler Luxury Hotel</span>
+                <h2>Our goalis Ensure Hotel Booking Accessibility.</h2>
+                <div class="text">Hoteler in a powerful way of just not an only professions, however in passion for our Company. We have to a tendency to believe the idea that smart looking of any website. </div>
+              </div>
+              <div class="progress-info">
+                <div class="progress">
+                  <div class="progress-single">
+                    <h5 class="progress-title">Google Review</h5>
+                    <div class="bar">
+                      <div class="bar-inner count-bar" data-percent="90%">
+                        <div class="count-text">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="progress-single">
+                    <h5 class="progress-title">Happy Clients</h5>
+                    <div class="bar">
+                      <div class="bar-inner count-bar" data-percent="50%">
+                        <div class="count-text">50%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- rooms-section -->
+  <section class="rooms-section style-luxury">
+    <div class="outer-box">
+      <div class="sec-title text-center wow fadeInUp">
+        <span class="sub-title">Hoteler Luxury Rooms</span>
+        <h2>Luxury Rooms & Suites</h2>
+      </div>
+      <div class="row gx-25">
+        <!-- room-block -->
+        <div class="room-block col-lg-3 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeIn" data-wow-delay="300ms">
+            <div class="image-box">
+              <figure class="image-2 overlay-anim"><img src="images/resource/room4-1.jpg" alt=""></figure>
+            </div>
+          </div>
+        </div>
+        <!-- room-block -->
+        <div class="room-block col-lg-3 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeIn" data-wow-delay="500ms">
+            <div class="image-box">
+              <figure class="image-2 overlay-anim"><img src="images/resource/room4-2.jpg" alt=""></figure>
+            </div>
+          </div>
+        </div>
+        <!-- room-block -->
+        <div class="room-block col-lg-6 col-md-6 col-sm-12">
+          <div class="inner-box large-style wow fadeIn" data-wow-delay="400ms">
+            <div class="image-box">
+              <figure class="image-2 overlay-anim"><img src="images/resource/room4-4.jpg" alt=""></figure>
+            </div>
+          </div>
+        </div>
+        <!-- room-block -->
+        <div class="room-block col-lg-6 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeIn">
+            <div class="image-box">
+              <figure class="image-2 overlay-anim"><img src="images/resource/room4-3.jpg" alt=""></figure>
+            </div>
+          </div>
+        </div>
+        <!-- room-block -->
+        <div class="room-block col-lg-3 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeIn" data-wow-delay="300ms">
+            <div class="image-box">
+              <figure class="image-2 overlay-anim"><img src="images/resource/room4-5.jpg" alt=""></figure>
+            </div>
+          </div>
+        </div>
+        <!-- room-block -->
+        <div class="room-block col-lg-3 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeIn" data-wow-delay="500ms">
+            <div class="image-box">
+              <figure class="image-2 overlay-anim"><img src="images/resource/room4-6.jpg" alt=""></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End rooms-section -->
 
   <!-- Pricing Section Four -->
-  <section class="pricing-section-four pt-0">
+  <section class="pricing-section-four style-luxury pt-0">
     <div class="auto-container">
-      <div class="sec-title text-center"> <span class="sub-title">ROOMAROO LUXURY ROOMS</span>
+      <div class="sec-title text-center"> <span class="sub-title">Hoteler LUXURY ROOMS</span>
         <h2>Luxury Room & Suites</h2>
       </div>
       <div class="row"> 
@@ -512,12 +732,49 @@
   </section>
   <!-- End Pricing Section -->
 
+  <!-- testimonial-section-luxury -->
+  <section class="testimonial-section-luxury">
+    <div class="bg bg-image wow reveal-top tm-gsap-img-parallax overflow-hidden">
+      <img src="images/background/bg-testi2.jpg" alt="Image">
+      <div class="text-rotate">HOTELER</div>
+    </div>
+    <div class="anim-icons"><img src="images/icons/shape-36.png" alt=""></div>
+    <div class="auto-container">
+      <div class="outer-box">
+        <div class="row">
+          <!-- Content Column -->
+          <div class="content-column col-lg-8 offset-lg-4 wow fadeInRight" data-wow-delay="600ms">
+            <div class="inner-column">
+              <div class="content-box">
+                <div class="sec-title">
+                  <span class="sub-title style-two">Our testimonials</span>
+                  <h2>What Clients Say?</h2>
+                </div>
+                <div class="testimonial-block-seven">
+                  <div class="inner-block">
+                    <div class="icon"><img src="images/icons/icon-group.png" alt=""></div>
+                    <div class="author-text">Booking this hotel was the best decision we made for our trip! The process was quick and easy, and the staff confirmed everything</div>
+                    <div class="info-box">
+                      <h4 class="testimonial-name">Leslie Alexander /</h4>
+                      <div class="testimonial-position">Architecture</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Section -->
+
   <!-- news-section -->
   <section class="news-section">
     <div class="auto-container">
       <div class="sec-title text-center wow fadeInUp">
-        <span class="sub-title">NEWS & BLOG</span>
-        <h2>Check Latest Blog Post <br />from Blog List</h2>
+        <span class="sub-title">Hoteler Hotel News</span>
+        <h2>Latest News Update</h2>
       </div>
       <div class="row">
         <!-- News Block -->
@@ -533,10 +790,10 @@
             </div>
             <div class="content-box">
               <ul class="post-meta">
-                <li class="categories"><a href="news-details.html">Relax Zone</a></li>
-                <li class="date">May 15, 2025</li>
+                <li class="categories"><a href="news-details.html">Hotel Booking</a></li>
+                <li class="date">May 25, 2025</li>
               </ul>
-              <h4 class="title"><a href="news-details.html">Advantages of Offering Online Registration at Your Hotel</a></h4>
+              <h4 class="title"><a href="news-details.html">Retore Lighting Design best in The Hotel</a></h4>
             </div>
           </div>
         </div>
@@ -553,10 +810,10 @@
             </div>
             <div class="content-box">
               <ul class="post-meta">
-                <li class="categories"><a href="news-details.html">Royal suite</a></li>
-                <li class="date">Jan 28, 2025</li>
+                <li class="categories"><a href="news-details.html">Room Service</a></li>
+                <li class="date">May 25, 2025</li>
               </ul>
-              <h4 class="title"><a href="news-details.html">Our Health Club is Now Available for Your Fitness Needs</a></h4>
+              <h4 class="title"><a href="news-details.html">Swimming Benefits is Good For Your Health</a></h4>
             </div>
           </div>
         </div>
@@ -573,10 +830,10 @@
             </div>
             <div class="content-box">
               <ul class="post-meta">
-                <li class="categories"><a href="news-details.html">Apartments</a></li>
-                <li class="date">Oct 20, 2025</li>
+                <li class="categories"><a href="news-details.html">Hotel Guide</a></li>
+                <li class="date">May 25, 2025</li>
               </ul>
-              <h4 class="title"><a href="news-details.html">Restoring the Lighting Design in the Hotel</a></h4>
+              <h4 class="title"><a href="news-details.html">Available Now Health Club For Your Fitness</a></h4>
             </div>
           </div>
         </div>
@@ -584,7 +841,6 @@
     </div>
   </section>
   <!-- End news section -->
-
 
   <!-- Main Footer -->
   <footer class="main-footer footer-style-one">
@@ -697,14 +953,16 @@
   <!--End Main Footer -->
   
   <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+  
 
 </div><!-- End Page Wrapper -->
+
 <script src="js/jquery.js"></script> 
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/slick-animation.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/appear.js"></script>
 <script src="js/mixitup.js"></script>
@@ -716,5 +974,22 @@
 <script src="js/splitType.js"></script>
 <script src="js/script.js"></script>
 <script src="js/script-gsap.js"></script>
+<script>
+  // Background image area start here ***
+  $("[data-background").each(function () {
+    $(this).css(
+      "background-image",
+      "url( " + $(this).attr("data-background") + "  )"
+    );
+  });
+
+  // Background image hover change area start here ***
+  $(".service-block-two").hover(function () {
+    let newBackground = $(this).data("bg");
+    $(".service-section-two .outer-box")
+      .attr("data-background", newBackground)
+      .css("background-image", "url(" + newBackground + ")");
+  });
+</script>
 </body>
 </html>
