@@ -23409,7 +23409,7 @@ Section Title
 }
 .pricing-section.style-two .pricing-block .inner-box .image-column .inner-column .text {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px rgba(var(--theme-color1-rgb), 0.3);
+  -webkit-text-stroke: 1px #ae7d54;
   color: transparent;
   font-family: var(--title-font);
   font-size: 120px;
