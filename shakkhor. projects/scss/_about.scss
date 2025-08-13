@@ -1765,8 +1765,13 @@
       display: inline-block;
       border-radius: 10px;
       margin-bottom: 0px;
+      transform: rotate(8deg);
       img{
         width: 100%;
+      }
+      &::after{
+        content: '';
+        position: absolute;
       }
     }
   }
