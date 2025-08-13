@@ -1659,7 +1659,7 @@
 
 ***/
 
-.about-section-ten {
+.about-section-ten{
   position: relative;
   padding: 120px 0 40px;
   @include media-breakpoint-down(sm){
@@ -1753,6 +1753,20 @@
     position: relative;
     margin-bottom: 50px;
     .inner-column {
+      &::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        border-radius: 30px;
+        background-color: #ae7c542a;
+        height: 100%;
+        width: 80%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        
+      }
       position: relative;
       padding: 0 67px 0 0;
       text-align: right;
@@ -1763,15 +1777,12 @@
     .image-1 {
       position: relative;
       display: inline-block;
-      border-radius: 10px;
       margin-bottom: 0px;
-      transform: rotate(8deg);
+      transform: rotate(10deg);
       img{
-        width: 100%;
-      }
-      &::after{
-        content: '';
-        position: absolute;
+        width: 90%;
+        display: block;
+        border-radius: 30px;
       }
     }
   }

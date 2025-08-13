@@ -12,45 +12,6 @@
   @include media-breakpoint-down(md){
     padding: 80px 0 40px;
   }
-  .anim-icons {
-    .image-1 {
-      position: absolute;
-      right: 0;
-      top: 230px;
-      z-index: -1;
-      pointer-events: none;
-      @include media-breakpoint-down(xxl){
-        display: none;
-      }
-    }
-    .image-2 {
-      position: absolute;
-      left: 0;
-      bottom: 105px;
-      z-index: -1;
-      pointer-events: none;
-      @include media-breakpoint-down(xxl){
-        display: none;
-      }
-    }
-    .image-3{
-      bottom: 10px;
-      left: 0;
-      max-width: 420px;
-      position: absolute;
-      width: 100%;
-    }
-    .image-4 {
-      position: absolute;
-      right: 0;
-      top: 0px;
-      z-index: -1;
-      pointer-events: none;
-      @include media-breakpoint-down(xxl){
-        display: none;
-      }
-    }
-  }
   .sec-title{
     h2{
       @include media-breakpoint-down(sm){
